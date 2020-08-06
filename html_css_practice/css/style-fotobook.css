@@ -87,7 +87,7 @@
         background-color: #3555b4;
     }
 
-    input[type=text] {
+    input[type=text], input[type=password] {
         border: 1px solid black;
         margin-left:10px;
         cursor: pointer;
