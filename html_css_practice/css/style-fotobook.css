@@ -97,3 +97,7 @@
         width: 460px;
 
     }
+
+    label.error {
+      color: red;
+    }

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Fotobook</title>
     <link rel="stylesheet" type="text/css" href= "css/style-fotobook.css" />
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="js/signup-form.js"></script>
 </head>
 
 <body>
@@ -18,12 +21,12 @@
             <h1>Fotobook Signup</h1>
     </div>
 
-    <form class="signup">
+    <form class="signup" id="signup-form">
         <div class="main">
         <label for="first">First Name</label>
-        <input type="text" name="FirstName" id="first" placeholder="First name"><br>
+        <input type="text" name="first" id="first" placeholder="First name"><br>
         <label for="last">Last Name</label>
-        <input type="text" name="LastName" id="last" placeholder="Last name"><br>
+        <input type="text" name="last" id="last" placeholder="Last name"><br>
         </div>
 
         <div class="country-selector">
@@ -42,22 +45,20 @@
         </div>
         <div class="interest-selector">
             <label id="selecti">Select your interests:</label>
-            <label><input type="checkbox">Fashion</label>
-            <label><input type="checkbox">News</label>
-            <label><input type="checkbox">Sport</label>
+            <label><input type="checkbox" name="checkbox[]" id="interest1">Fashion</label>
+            <label><input type="checkbox" name="checkbox[]" id="interest2">News</label>
+            <label><input type="checkbox" name="checkbox[]" id="interest3">Sport</label>
         </div>
         <div class="main">
-        <label for="newpass">New Password</label>
-        <input type="password" name="NewPass" id="newpass" placeholder="Password"><br>
+        <label for="Newpass">New Password</label>
+        <input type="password" name="Newpass" id="Newpass" placeholder="Password"><br>
         <label for="confirmnewpass">Password Confirmation</label>
-        <input type="password" name="ConfirmNewpass" id="confirmnewpass" placeholder="Password"><br>
+        <input type="password" name="confirmnewpass" id="confirmnewpass" placeholder="Password"><br>
         </div>
 
         <div class="signup-button">
             <input type="submit" value="Signup">
         </div>
     </form>
-
-
 </body>
 </html>
